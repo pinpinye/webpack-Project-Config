@@ -1,12 +1,33 @@
 <template>
   <div>
     我是Assetfoot
+    <p> 我的名字叫{{ name }} </p>
   </div>
 </template>
 
 <script>
+import Vue from 'vue'
+import { commonAjax } from "../../../api/ajax";
+import { apiUrl } from "../../../api/api.config";
+
 export default {
-  name: 'LoginPage'
+  name: 'LoginPage',
+  data() {
+    return {
+      name:"",
+      age:""
+    }
+  },
+  mounted() {
+     commonAjax(apiUrl.login.query,{})
+     .then(res => {
+      console.log("哈哈哈哈");
+      console.log(res);
+      this.name = res.data.name;
+     })
+     .catch(err => {
+     })
+  }
 }
 </script>
 
