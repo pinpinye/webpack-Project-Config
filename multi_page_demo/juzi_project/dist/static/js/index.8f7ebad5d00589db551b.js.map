@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/index.js"],"names":["console","log"],"mappings":"uCAAAA,QAAQC,IAAI","file":"static/js/index.8f7ebad5d00589db551b.js","sourcesContent":["console.log(\"首页\")\r\n\n\n\n// WEBPACK FOOTER //\n// ./src/pages/index.js"],"sourceRoot":""}
