@@ -3,22 +3,23 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path')
+// 配置开发环境接口地址
+let dev_api = 'http://127.0.0.1:3000';
+
 
 module.exports = {
   dev: {
-
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     // 地址映射表，可以通过设置将复杂的url简化，还可以解决跨域问题
     proxyTable: {
             '/api': {
-            target: 'http://127.0.0.1:3000', // 你接口的域名
-            // target: 'http://node.juzilicai.com', // 你接口的域名
-        // secure: false,      // 如果是https接口，需要配置这个参数
-        changeOrigin: true,     // 如果接口跨域，需要进行这个参数配置
-        pathRewrite: {
-            '^/api': ''
+            target: dev_api, // 你接口的域名
+            // secure: false,      // 如果是https接口，需要配置这个参数
+            changeOrigin: true,     // 如果接口跨域，需要进行这个参数配置
+            pathRewrite: {
+                '^/api': ''
         }
     }},
     // Various Dev Server settings
@@ -28,7 +29,6 @@ module.exports = {
     errorOverlay: true,
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
-
 
     /**
      * Source Maps

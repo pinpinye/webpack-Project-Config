@@ -163,7 +163,7 @@ if (config.build.bundleAnalyzerReport) {
 
 
 //写成遍历的方式
- var pages = getEntry('./src/pages/**/*.html');
+ var pages = getEntry('./src/views/**/*.html');
 for (var pathname in pages) {
   // 配置生成的html文件，定义路径等
   var conf = {

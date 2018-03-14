@@ -7,8 +7,7 @@ let proUrl = 'https://node.haha.com/mockdata/v1';
 // 根据环境判断路径
 (curEnv == "production") ? (baseUrl = proUrl) :( baseUrl = devUrl);
 
-
-  exports.apiUrl = {
+ exports.apiUrl = {
     login: {
         query: baseUrl + "/juzi/v1/demo/login",
     },

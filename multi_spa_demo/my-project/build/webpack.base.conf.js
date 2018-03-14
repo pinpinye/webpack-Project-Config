@@ -6,7 +6,7 @@ const vueLoaderConfig = require('./vue-loader.conf')
 var glob = require('glob');
 
 
-var entries=getEntry('./src/pages/**/*.js');
+var entries=getEntry('./src/views/**/*.js');
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }

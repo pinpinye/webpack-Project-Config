@@ -14,14 +14,14 @@ import axios from 'axios';
 
 
 	// 通用ajax请求方法
-	export const commonAjax = (url, params) => {
+	// export const commonAjax = (url, params) => {
 	// let loadingInstance1 = Loading.service({   //待定需要自定义loading
 	// 	fullscreen: false,
 	// 	target: "content"
 	// });
-	console.log(params);
+	// console.log(params);
 	// 创建axios实例
-	let service = axios.create({
+	export const  service = axios.create({
 		timeout: 20000,                    // 请求超时时间
 		headers: {
 			"Content-Type": "application/json",
@@ -63,10 +63,10 @@ import axios from 'axios';
 	)
 
 	// 发送请求
-	return service.post(url, params).then(res => {
-		return res
-	})
-}
+	// return service.post(url, params).then(res => {
+	// 	return res
+	// })
+// }
 
 
 // export default service;

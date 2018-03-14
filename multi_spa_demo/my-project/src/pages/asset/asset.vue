@@ -1,6 +1,6 @@
 <template>
   <div id="asset">
-    我是asset的公共部分
+    哈哈哈哈哈哈哈哈哈哈哈哈哈公共
     <router-view/>
   </div>
 </template>

@@ -7,8 +7,8 @@
 
 <script>
 import Vue from 'vue'
-import { commonAjax } from "../../../api/ajax";
-import { apiUrl } from "../../../api/api.config";
+import { service } from "../../../api/ajax";
+import { apiUrl } from "../api/api.config";
 
 export default {
   name: 'LoginPage',
@@ -19,10 +19,8 @@ export default {
     }
   },
   mounted() {
-     commonAjax(apiUrl.login.query,{})
+     service.post(apiUrl.login.query,{})
      .then(res => {
-      console.log("哈哈哈哈");
-      console.log(res);
       this.name = res.data.name;
      })
      .catch(err => {
