@@ -6,7 +6,7 @@ const vueLoaderConfig = require('./vue-loader.conf')
 var glob = require('glob');
 
 
-var entries=getEntry('./src/views/**/*.js');
+var entries=getEntry('./src/pages/**/main.js');
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
 }
@@ -87,7 +87,6 @@ module.exports = {
 
 }
 
-console.log(module.exports.entry,'sssssss')
 function getEntry(globPath) {
   var entries = {},
     basename, tmp, pathname;
