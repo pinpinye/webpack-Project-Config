@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/asset/index.js"],"names":["console","log"],"mappings":"uCAAAA,QAAQC,IAAI","file":"static/js/asset.80c7239b81ecce234a0b.js","sourcesContent":["console.log(\"asset\")\r\n\n\n\n// WEBPACK FOOTER //\n// ./src/pages/asset/index.js"],"sourceRoot":""}
